@@ -1,6 +1,20 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Cards
+### A Cards application built with React, Bootstrap and Next.js
+    - Displays User Information for an Organization
+    - Makes an API Fetch to get User Information
+    - Cards displayed in a Carousel
+    - A Modal to view more User information
+    - Pagination handles 1000s of Cards
+
+# Demo
+## https://www.microtekblue.com/cards
+
+### Author: Asim Ahmad
+### Github: https://github.com/microtekblue
+
+# Getting Started
 
 First, run the development server:
 

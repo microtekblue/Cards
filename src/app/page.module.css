@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
+  padding: 1rem;
   min-height: 100vh;
 }
 
@@ -46,12 +46,21 @@
   width: var(--max-width);
 }
 
+.carouselContainer {
+  position: relative;
+}
+
 .card {
   padding: 1rem 1.2rem;
   border-radius: var(--border-radius);
-  background: rgba(var(--card-rgb), 0);
-  border: 1px solid rgba(var(--card-border-rgb), 0);
   transition: background 200ms, border 200ms;
+  background: rgba(var(--card-rgb), 0.1);
+  border: 1px solid rgba(var(--card-border-rgb), 0.15);
+}
+
+.card > div {
+  background-color: #fff;
+  border-radius: var(--border-radius);
 }
 
 .card span {
@@ -65,11 +74,10 @@
 }
 
 .card p {
-  margin: 0;
   opacity: 0.6;
   font-size: 0.9rem;
   line-height: 1.5;
-  max-width: 30ch;
+  max-width: 100ch;
   text-wrap: balance;
 }
 
@@ -111,8 +119,7 @@
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
-    background: rgba(var(--card-rgb), 0.1);
-    border: 1px solid rgba(var(--card-border-rgb), 0.15);
+
   }
 
   .card:hover span {
@@ -140,7 +147,7 @@
   }
 
   .card {
-    padding: 1rem 2.5rem;
+    padding: 1rem;
   }
 
   .card h2 {
@@ -228,3 +235,23 @@
     transform: rotate(0deg);
   }
 }
+
+.cardTitle {
+  width: calc(100% - 90px);
+  vertical-align: bottom;
+  margin: 0 20px;
+}
+
+.cardText {
+  margin-bottom: 20px;
+  height: 100px;
+  overflow-y: auto;
+}
+
+@media (min-width: 992px) {
+  .cardText {
+    height: 200px;
+  }
+}
+
+.width40 { width: 40px}
