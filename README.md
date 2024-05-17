@@ -9,7 +9,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
     - Pagination handles 1000s of Cards
 
 # Demo
-## https://www.microtekblue.com/cards
+## https://cards-flax-three.vercel.app/
 
 ### Author: Asim Ahmad
 ### Github: https://github.com/microtekblue
