@@ -1,7 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+   // basePath: '/cards',
     images: {
-        domains: ['robohash.org'],
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'robohash.org',
+                port: '',
+            },
+        ],
     },
 };
 
